@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("images/bg-main-mobile.png");
+  background-position: 0 -25%;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 2.2rem;
+}
+
+header img {
+  margin-top: 1rem;
+}
+
+.header-tablet-img {
+  height: 40rem;
+  width: 26rem;
+  display: none;
+}
+
+header h1 {
+  margin-top: 4.5rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+}
+
+main {
+  position: relative;
+}
+
+main .pattern-2 {
+  width: 28rem;
+  height: 42rem;
+}
+
+.main-top-bg {
+  height: 60rem;
+  background-color: #191826;
+  text-align: center;
+  margin-top: 12.5rem;
+  border-radius: 12px;
+}
+
+.cell-phone {
+  width: 21rem;
+  height: 43rem;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-bottom-bg {
+  background-color: #fa7453;
+  height: 57rem;
+  margin-top: -22rem;
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+  padding-bottom: rem;
+}
+
+.main-bottom-content-wrapper {
+  padding: 3.3rem;
+  color: #fcfaf9;
+}
+
+.main-bottom-content-wrapper h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.main-desc {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+}
+
+.main-price {
+  display: flex;
+  margin-top: 1.9rem;
+  font-size: 6.5rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+.main-price span {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 1.8rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-btn {
+  width: 29.6rem;
+  height: 6.1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.apple {
+  margin-top: 1.9rem;
+  background-color: #191826;
+  color: #fcfaf9;
+}
+
+.apple:hover {
+  background-color: #66e2dc;
+}
+
+.apple span {
+  margin-left: 1rem;
+}
+
+.android {
+  background-color: #fcfaf9;
+  color: #191826;
+  margin-top: 1.9rem;
+}
+
+.android:hover {
+  background-color: #ffb964;
+}
+
+.android span {
+  margin-left: 1rem;
+}
+
+footer {
+  margin-top: 3.8rem;
+  padding: 2.3rem;
+}
+
+footer p {
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: #191826;
+}
+
+footer span {
+  font-weight: 700;
+}
+
+.social-media-links {
+  margin-top: 6rem;
+}
+
+.svg {
+  margin-right: 1.9rem;
+}
+
+.svg:hover {
+  cursor: pointer;
+}
+
+.svg path:hover {
+  fill: #fa7453;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("images/bg-main-tablet.png");
+    background-position: 60% -30%;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    position: relative;
+    padding: 4.5rem;
+    overflow: hidden;
+  }
+
+  .header-tablet-img {
+    display: inline-block;
+    position: absolute;
+    top: -4.8rem;
+    right: -3rem;
+  }
+
+  .header-content-wrapper {
+    width: 52rem;
+    margin-top: 7.4rem;
+  }
+
+  .header-content-wrapper h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+
+  .header-content-wrapper p {
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  main {
+    padding: 0 3.5rem;
+  }
+
+  .cell-phone {
+    width: 27rem;
+    height: 55rem;
+    transform: translate(-110%, -40%);
+  }
+
+  .main-bottom-bg {
+    width: 39rem;
+    position: absolute;
+    top: 60%;
+    right: 15%;
+  }
+
+  footer {
+    margin-top: 5rem;
+    padding: 3.3rem;
+  }
+
+  .footer-p-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-p-social-wrapper p {
+    width: 36.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header,
+  main,
+  footer {
+    padding: 16rem;
+  }
+
+  main {
+    padding-top: 1rem;
+  }
+
+  .header-tablet-img {
+    top: 0;
+    right: 0;
+  }
+
+  .header-content-wrapper {
+    width: 101rem;
+    margin-top: 7.4rem;
+  }
+
+  .header-content-wrapper h1 {
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+  }
+
+  .header-content-wrapper p {
+    max-width: 82.5rem;
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
+
+  .cell-phone {
+    width: 32rem;
+    height: 64rem;
+    top: 20%;
+    left: 42%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-img {
+    width: 14.6rem;
+    height: 3.2rem;
+    margin-right: 15rem;
+  }
+
+  .footer-p-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .footer-p-social-wrapper p {
+    margin-top: 0;
+  }
+
+  .social-media-links {
+    margin-top: 0;
+    padding: 5rem 0 5rem 0;
+  }
+}
